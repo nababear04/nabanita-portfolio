@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nabanita Roy | 3D Animated BTS-Themed Data Science & Full-Stack Portfolio</title>
+  <meta name="description" content="Official portfolio of Nabanita Roy, B.Tech CSE (Data Science) student at Brainware University. Specializing in Data Science, Full-Stack development, AI, and IoT with a dreamy BTS soft-pink 3D aesthetic.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow-orb orb-1"></div>
+  <div class="ambient-glow-orb orb-2"></div>
+  <div class="ambient-glow-orb orb-3"></div>
+
+  <!-- =========================================================
+       BTS MEMBER LOGGING IN LOADING GATEWAY
+       ========================================================= -->
+  <div id="bts-loading-screen" class="bts-loading-overlay">
+    <div class="loading-console">
+      <div class="console-header">
+        <div class="brand-badge">
+          <svg class="bts-logo-icon" viewBox="0 0 100 100">
+            <!-- BTS Iconic Door/Shield Logo in Soft Pink -->
+            <path d="M 22 22 L 46 29 L 46 71 L 22 78 Z" fill="#ec4899"/>
+            <path d="M 78 22 L 54 29 L 54 71 L 78 78 Z" fill="#f472b6"/>
+          </svg>
+          <div>
+            <div class="console-title">BTS ARMY NETWORK // NABANITA.OS</div>
+            <div class="console-sub">Bangtan Authentication Terminal • Soft Pink Edition</div>
+          </div>
+        </div>
+        <button id="loading-skip-btn" class="btn-skip-loading" onclick="if(window.dismissLoadingScreen){window.dismissLoadingScreen();}else{var el=document.getElementById('bts-loading-screen');if(el)el.remove();}" title="Skip to portfolio directly">Skip Intro &rarr;</button>
+      </div>
+
+      <div class="progress-section">
+        <div class="progress-header">
+          <span id="loading-status-headline" class="status-headline">Initializing BTS Member Authentication...</span>
+          <span id="loading-percentage" class="loading-percentage">0%</span>
+        </div>
+        <div class="loading-progress-bar-track">
+          <div id="loading-progress-fill" class="loading-progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- 3D BTS Interactive Hologram Portal Stage -->
+      <div id="loading-3d-stage" class="loading-3d-stage">
+        <div class="stage-3d-hint">3D Hologram: 7 BTS Member Orbs Connecting</div>
+      </div>
+
+      <!-- 7 BTS Members Live Logging Grid -->
+      <div id="loading-members-list" class="loading-members-list">
+        <!-- Dynamically rendered by loadingScreen.js -->
+      </div>
+
+      <div class="console-footer">
+        <div class="bts-note">
+          <span class="badge-sparkle">✨</span> 7 Members • Data Science • Full-Stack Innovation
+        </div>
+        <button id="loading-enter-btn" class="btn-enter-universe hidden" onclick="if(window.dismissLoadingScreen){window.dismissLoadingScreen();}else{var el=document.getElementById('bts-loading-screen');if(el)el.remove();}">
+          ENTER NABANITA'S UNIVERSE 🌸
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+       ========================================================= -->
+  <header class="app-navbar">
+    <a href="#" class="nav-brand">
+      <span>Nabanita.DS</span>
+      <span class="nav-brand-heart">🌸</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#lounge" class="nav-link">BTS Lounge</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- BGM Player Toggle -->
+      <button id="music-toggle-btn" class="btn-music-toggle" title="Play BTS Lo-Fi Dream Ambient Melody">
+        <div class="music-eq" id="music-eq">
+          <span class="music-bar"></span>
+          <span class="music-bar"></span>
+          <span class="music-bar"></span>
+        </div>
+        <span id="music-btn-text">BTS Lo-Fi</span>
+      </button>
+
+      <!-- Resume Download Button -->
+      <a href="/Nabanita_Roy_Resume.pdf" download="Nabanita_Roy_Resume.pdf" target="_blank" class="btn-resume-nav">
+        <span>Resume</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       MAIN CONTENT
+       ========================================================= -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="bts-hero-badge">
+            <span class="badge-sparkle">🌸</span> BTS LOVE YOURSELF AESTHETIC • B.TECH CSE
+          </div>
+          
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">Nabanita Roy</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Final-year Computer Science & Data Science engineer specializing in machine learning insights, AI integrations, and cloud-ready full-stack web applications.
+          </p>
+
+          <div class="hero-stat-badges">
+            <div class="stat-pill">
+              <span>🎓</span> Brainware University • CGPA 8.69
+            </div>
+            <div class="stat-pill">
+              <span>🚀</span> Data Science & Full-Stack
+            </div>
+            <div class="stat-pill">
+              <span>💜</span> Borahae (보라해)
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary-soft">
+              <span>Explore My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="/Nabanita_Roy_Resume.pdf" target="_blank" class="btn btn-secondary-glass">
+              <span>View Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Three.js Interactive Canvas Container -->
+        <div class="hero-3d-stage">
+          <div id="three-canvas-container"></div>
+          <div class="canvas-hint-pill">✨ Drag to rotate 3D BTS Crystal Heart</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Data into Digital Magic</h2>
+          <p class="section-sub">Combining analytical precision with artistic web experiences, inspired by dedication and creative harmony.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--pink-600);">The Developer's Story</h3>
+            <p class="about-lead-text">
+              I am a final-year B.Tech Computer Science student specializing in <strong>Data Science</strong> at <strong>Brainware University</strong> (CGPA: 8.69 / 10). I have a deep passion for understanding the stories hidden within complex datasets, training predictive machine learning models, and bringing them to life with clean, interactive, and aesthetic web interfaces.
+            </p>
+
+            <div class="domain-cards-list">
+              <div class="domain-pill-card">
+                <div class="domain-icon-box">💻</div>
+                <div class="domain-info">
+                  <h4>Full-Stack Web Engineering</h4>
+                  <p>Building scalable modern web apps using React.js, Node.js, Express, and cloud databases like MongoDB Atlas & MySQL.</p>
+                </div>
+              </div>
+
+              <div class="domain-pill-card">
+                <div class="domain-icon-box">📊</div>
+                <div class="domain-info">
+                  <h4>Data Analytics & Predictive Modeling</h4>
+                  <p>Transforming business data into decisions using Power BI, Python (Pandas, NumPy, Seaborn), and Scikit-learn algorithms.</p>
+                </div>
+              </div>
+
+              <div class="domain-pill-card">
+                <div class="domain-icon-box">📡</div>
+                <div class="domain-info">
+                  <h4>IoT Ecosystems & Smart Tech</h4>
+                  <p>Interfacing Arduino hardware sensors with cloud microservices to build real-time smart city management solutions.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages Row -->
+            <div style="margin-top: 0.5rem;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Spoken Languages:</span>
+              <div class="languages-row">
+                <div class="lang-badge"><span>🇬🇧</span> English (Professional)</div>
+                <div class="lang-badge"><span>🇮🇳</span> Hindi (Native)</div>
+                <div class="lang-badge"><span>🌸</span> Bengali (Native Regional)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BTS-Inspired Tech Playlist Card -->
+          <div class="tech-playlist-card">
+            <div class="playlist-header">
+              <div class="album-vinyl-preview">
+                <div class="vinyl-disc">
+                  <div class="vinyl-core"></div>
+                </div>
+                <div class="playlist-titles">
+                  <h3>Nabanita: The Tech Discography</h3>
+                  <span>Album: Love Yourself: 'Code & Insights'</span>
+                </div>
+              </div>
+              <span style="font-size: 1.3rem;">🎵</span>
+            </div>
+
+            <div class="tracks-list">
+              <div class="track-item">
+                <div class="track-left">
+                  <span class="track-num">01</span>
+                  <div>
+                    <div class="track-title">Butter.py (Data Wrangling)</div>
+                    <div class="track-sub">Smooth like Pandas & NumPy</div>
+                  </div>
+                </div>
+                <span class="track-duration">92%</span>
+              </div>
+
+              <div class="track-item">
+                <div class="track-left">
+                  <span class="track-num">02</span>
+                  <div>
+                    <div class="track-title">SpringDay.sql (Database Architecture)</div>
+                    <div class="track-sub">Relational MySQL & MongoDB Atlas</div>
+                  </div>
+                </div>
+                <span class="track-duration">86%</span>
+              </div>
+
+              <div class="track-item">
+                <div class="track-left">
+                  <span class="track-num">03</span>
+                  <div>
+                    <div class="track-title">Dynamite.jsx (Modern Frontend)</div>
+                    <div class="track-sub">React.js, Three.js & Soft Pink CSS</div>
+                  </div>
+                </div>
+                <span class="track-duration">85%</span>
+              </div>
+
+              <div class="track-item">
+                <div class="track-left">
+                  <span class="track-num">04</span>
+                  <div>
+                    <div class="track-title">MagicShop.bi (Business Intelligence)</div>
+                    <div class="track-sub">Power BI, DAX & Executive Visuals</div>
+                  </div>
+                </div>
+                <span class="track-duration">88%</span>
+              </div>
+
+              <div class="track-item">
+                <div class="track-left">
+                  <span class="track-num">05</span>
+                  <div>
+                    <div class="track-title">Microkosmos.iot (Smart Telemetry)</div>
+                    <div class="track-sub">Arduino Ultrasonic & ML Forecasting</div>
+                  </div>
+                </div>
+                <span class="track-duration">84%</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(244, 114, 182, 0.1); padding: 0.9rem; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--text-muted); font-style: italic;">
+              "Like BTS songs that inspire millions, clean code and intelligent data models solve real challenges for people around the world."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">Skills Stage</span>
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-sub">A comprehensive suite of data science, cloud architecture, and software engineering capabilities.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills rendered dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">Interactive demonstrations of production full-stack platforms and intelligent IoT systems.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Project cards with live interactive widgets injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EXPERIENCE & EDUCATION SECTION -->
+    <section id="journey">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">Tour Roadmap</span>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-sub">Industrial internships, specialized training, and academic accomplishments.</p>
+        </div>
+
+        <div class="timeline-two-col">
+          <!-- Column 1: Internships & Industrial Training -->
+          <div class="timeline-column">
+            <h3 class="timeline-col-title">
+              <span>💼</span> Industrial Internships
+            </h3>
+
+            <div class="timeline-cards-wrap" id="internships-wrap">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Column 2: Education -->
+          <div class="timeline-column">
+            <h3 class="timeline-col-title">
+              <span>🎓</span> Academic Milestones
+            </h3>
+
+            <div class="timeline-cards-wrap" id="education-wrap">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BTS ARMY SPECIAL LOUNGE -->
+    <section id="lounge">
+      <div class="section-container">
+        <div id="army-lounge-container">
+          <!-- Rendered by armyFanZone.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Send a Purple Letter 💌</h2>
+          <p class="section-sub">Looking for an enthusiastic Data Analyst, Data Scientist, or Full-Stack developer? Let's talk!</p>
+        </div>
+
+        <div class="contact-card-container">
+          <div class="contact-info-col">
+            <h3>Let's Connect & Collaborate</h3>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">
+              Whether you have an entry-level opportunity in Data Analytics, Machine Learning, Business Intelligence, or Full-Stack Development, or just want to chat about BTS, my inbox is always open!
+            </p>
+
+            <div class="contact-channels-list">
+              <a href="mailto:rnabanita774@gmail.com" class="channel-item">
+                <div class="channel-icon">✉️</div>
+                <div>
+                  <div class="channel-label">Email Address</div>
+                  <div class="channel-value">rnabanita774@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:+916909144952" class="channel-item">
+                <div class="channel-icon">📞</div>
+                <div>
+                  <div class="channel-label">Phone</div>
+                  <div class="channel-value">+91 6909144952</div>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon">📍</div>
+                <div>
+                  <div class="channel-label">Location</div>
+                  <div class="channel-value">Barasat, West Bengal, India</div>
+                </div>
+              </div>
+
+              <a href="https://www.linkedin.com/in/nabanita-roy-a45b2528a" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">🔗</div>
+                <div>
+                  <div class="channel-label">LinkedIn Profile</div>
+                  <div class="channel-value">linkedin.com/in/nabanita-roy-a45b2528a</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/nababear04" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">🐙</div>
+                <div>
+                  <div class="channel-label">GitHub Profile</div>
+                  <div class="channel-value">github.com/nababear04</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Kim Seokjin or Hiring Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Data Science Role / Project Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Hello Nabanita, we loved your portfolio and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary-soft" style="width: 100%; justify-content: center;">
+                <span>Send Purple Note 🌸</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       BTS FLOATING COMPANION DOCK
+       ========================================================= -->
+  <div id="bts-companion-dock" class="bts-companion-dock">
+    <!-- Rendered by companionWidget.js -->
+  </div>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-quote">"Borahae! I Purple You 💜"</div>
+      <p class="footer-copy">Designed & Engineered with soft pink vibes by <strong>Nabanita Roy</strong></p>
+      <p style="font-size: 0.78rem; color: var(--text-light);">B.Tech CSE (Data Science) • Brainware University • Class of 2027</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
